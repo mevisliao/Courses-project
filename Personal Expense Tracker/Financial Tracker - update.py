@@ -82,7 +82,7 @@ class  Records:
             except ValueError:
                 return
             dt = repr(dt)
-            cat = cat.strip()
+            cat = ''.join(cat.split())
             if categories.is_category_valid(cat) == False:
                 print('The specified category is not in the category list.')
                 print('You can check the category list by command "view categories". ')
